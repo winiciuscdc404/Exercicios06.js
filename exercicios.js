@@ -31,10 +31,7 @@ function capitalizarPalavras(frase) {
 // 2.1 Ficha do aluno
 function criarAluno(nome, idade, curso) {
     const aluno = { nome, idade, curso };
-    console.log(`Nome: ${aluno.nome}`);
-    console.log(`Idade: ${aluno.idade}`);
-    console.log(`Curso: ${aluno.curso}`);
-    return aluno;
+    return { aluno, idade, curso };
 }
 
 // 2.2 Calculadora de IMC
@@ -46,10 +43,6 @@ function calcularIMC(nome, peso, altura) {
     else if (imc < 25)    classificacao = "Peso normal";
     else if (imc < 30)    classificacao = "Sobrepeso";
     else                  classificacao = "Obesidade";
-
-    console.log(`Nome: ${nome}`);
-    console.log(`IMC: ${imc}`);
-    console.log(`Classificação: ${classificacao}`);
     return { nome, imc, classificacao };
 }
 
